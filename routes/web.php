@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route:: get('formulario',[TipoPersonaController:: class, 'render']);
+Route:: get('formulario',[TipoPersonaController:: class, 'index']);
