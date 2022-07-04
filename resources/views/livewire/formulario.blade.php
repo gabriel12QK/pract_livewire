@@ -14,14 +14,14 @@
             </thead>
             <tbody>
                 @foreach ($t as $item)
-                    <tr>
-                        <td>{{ $item->id }}</td>
+                    <tr style="">
+                        <td >{{ $item->id }}</td>
                         <td>{{ $item->tipo }}</td>
                         <td>
-                            <button  wire:click="edit({{ $item->id }})">Editar</button>
+                            <button  wire:click="edit({{ $item->id }})" style="color: rgb(0, 81, 255)" >Editar</button>
                         </td>
                         <td>
-                            <button type="button" wire:click='destroyL({{$item->id}})' >Borrar</button>
+                            <button type="button" wire:click='destroyL({{$item->id}})' style="color: rgb(255, 0, 0)" >Borrar</button>
                         </td>
                     </tr>
                 @endforeach
